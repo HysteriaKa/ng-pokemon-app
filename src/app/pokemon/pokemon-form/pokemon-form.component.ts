@@ -18,7 +18,7 @@ export class PokemonFormComponent implements OnInit {
 		private router: Router) { }
 
 	ngOnInit() {
-		//liste des pokemonList
+		//liste des types de pokemonList
 		this.types = this.pokemonService.getPokemonTypeList();
 
 	}
@@ -48,6 +48,7 @@ export class PokemonFormComponent implements OnInit {
 			return false;
 		}
 		return true;
+		
 	}
 	onSubmit() {
 		console.log('submit form !');
